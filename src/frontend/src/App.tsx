@@ -43,13 +43,9 @@ function App() {
                 <Heart className="w-20 h-20 text-romantic-dark animate-pulse" fill="currentColor" />
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-bold text-romantic-dark font-cursive">
+              <h1 className="text-4xl md:text-6xl font-bold text-romantic-dark">
                 Will you be my Valentine zia?
               </h1>
-              
-              <p className="text-xl md:text-2xl text-romantic-medium font-medium">
-                I have something special to ask you... 💕
-              </p>
 
               <div ref={containerRef} className="relative min-h-[200px] flex items-center justify-center gap-6 pt-8">
                 <Button
@@ -89,21 +85,9 @@ function App() {
                 <Heart className="w-12 h-12 text-romantic-dark animate-bounce delay-200" fill="currentColor" />
               </div>
 
-              <h1 className="text-3xl md:text-5xl font-bold text-romantic-dark font-cursive leading-tight">
+              <h1 className="text-3xl md:text-5xl font-bold text-romantic-dark leading-tight">
                 YAYYAYYY I KNEW YOU'D SAY YES ILOVEYOUSMM
               </h1>
-
-              <div className="py-6">
-                <img
-                  src="/assets/generated/valentine-meme-cats.dim_1200x1200.png"
-                  alt="Celebration meme"
-                  className="w-full max-w-md mx-auto rounded-2xl shadow-xl"
-                />
-              </div>
-
-              <p className="text-4xl md:text-5xl font-bold text-romantic-dark animate-pulse">
-                MWAAHHH MWAAHHH 💋💋
-              </p>
 
               <div className="pt-6">
                 <Button

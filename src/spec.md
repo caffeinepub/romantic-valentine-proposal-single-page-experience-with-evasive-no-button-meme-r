@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Update the Valentine proposal prompt to include “zia” and refresh the celebration meme to a cute couple-cats version with the correct “MWAAHHH” spelling.
+**Goal:** Update the Valentine app UI to use classic (non-cursive) typography and remove the extra prompt line and all meme content from the celebration screen.
 
 **Planned changes:**
-- Update the proposal/question screen main header text to exactly: “Will you be my Valentine zia?”
-- Replace the celebration meme image asset with a newly edited/generated couple-cats meme image stored in `frontend/public/assets/generated`, and update the celebration view to load this new filename from `/assets/generated/`.
-- Update the celebration screen’s visible meme-text line to exactly: “MWAAHHH MWAAHHH 💋💋”.
+- Remove all uses of the `font-cursive` styling so headings and the letter modal title render in a standard non-cursive font.
+- Remove the proposal-screen prompt line: "I have something special to ask you... 💕".
+- Remove all celebration-screen meme content, including the couple-cats meme image and any visible "MWAAHH" meme text, while keeping the headline and "Open Letter" functionality.
 
-**User-visible outcome:** On the question screen the prompt reads “Will you be my Valentine zia?”, and after clicking “Yes” the celebration screen shows a new cute couple-cats meme image and the text “MWAAHHH MWAAHHH 💋💋”.
+**User-visible outcome:** The app displays all text in a classic non-cursive font; the proposal screen shows only the main question and Yes/No buttons; the celebration screen shows the celebratory headline and an "Open Letter" button without any meme image or "MWAAHH" text.

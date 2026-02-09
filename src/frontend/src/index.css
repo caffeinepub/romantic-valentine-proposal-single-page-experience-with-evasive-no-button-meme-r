@@ -76,10 +76,6 @@
 }
 
 @layer utilities {
-    .font-cursive {
-        font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-    }
-
     @keyframes float {
         0%, 100% {
             transform: translateY(0) rotate(0deg);

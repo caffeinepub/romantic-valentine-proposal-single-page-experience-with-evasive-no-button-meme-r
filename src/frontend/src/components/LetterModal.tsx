@@ -13,7 +13,7 @@ export function LetterModal({ open, onOpenChange }: LetterModalProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-3xl max-h-[85vh] bg-gradient-to-br from-white to-romantic-light/30 border-4 border-romantic-medium">
         <DialogHeader>
-          <DialogTitle className="text-3xl md:text-4xl font-bold text-romantic-dark text-center font-cursive flex items-center justify-center gap-3">
+          <DialogTitle className="text-3xl md:text-4xl font-bold text-romantic-dark text-center flex items-center justify-center gap-3">
             <Heart className="w-8 h-8" fill="currentColor" />
             A Letter For You
             <Heart className="w-8 h-8" fill="currentColor" />

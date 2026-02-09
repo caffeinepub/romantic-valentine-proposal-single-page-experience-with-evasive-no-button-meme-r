@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-09T17:13:29.860Z",
+  "generatedAt": "2026-02-09T17:21:03.284Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,8 +11,23 @@
     "implemented": 3,
     "items": [
       {
-        "id": "REQ-7",
-        "summary": "Update the main question header text on the proposal screen to include “zia” in the same line, so it reads exactly: “Will you be my Valentine zia?”",
+        "id": "REQ-10",
+        "summary": "Switch the UI typography to a classic (non-cursive) font across the app by removing usage of the `font-cursive` styling on headings (proposal screen and celebration screen) and the letter modal title, and ensure all visible text renders in a standard non-cursive font style.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/LetterModal.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/LetterModal.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Remove the proposal-screen line of text \"I have something special to ask you... 💕\" so it is no longer displayed anywhere in the question state UI.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/App.tsx"
@@ -22,21 +37,8 @@
         ]
       },
       {
-        "id": "REQ-8",
-        "summary": "Replace the celebration meme image with a new generated image depicting two cute couple cats and including the meme text “MWAAHHH MWAAHHH”, and update the celebration screen to render this new image asset from `frontend/public/assets/generated`.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/public/assets/generated/valentine-meme-cats.dim_1200x1200.png",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/public/assets/generated/valentine-meme-cats.dim_1200x1200.png",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-9",
-        "summary": "Update the visible meme-text line on the celebration screen to use the user’s spelling with three H’s, so it reads exactly: “MWAAHHH MWAAHHH 💋💋”.",
+        "id": "REQ-12",
+        "summary": "Remove all meme content from the celebration screen, including the couple-cats meme image and any visible \"MWAAHH/MWAAHHH\" meme text, so the celebration state contains no meme image and no \"MWAAHH\" line.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/App.tsx"
@@ -49,12 +51,12 @@
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/valentine-meme-cats.dim_1200x1200.png",
     "frontend/src/App.tsx",
+    "frontend/src/components/LetterModal.tsx",
+    "frontend/src/index.css",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

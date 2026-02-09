@@ -1,82 +1,76 @@
 {
   "kind": "build_request",
-  "title": "Update Valentine prompt text to include “zia” and replace celebration meme with cute couple cats",
+  "title": "Switch to classic (non-cursive) typography and remove all meme content + extra prompt line",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-7",
-      "text": "Update the main question header text on the proposal screen to include “zia” in the same line, so it reads exactly: “Will you be my Valentine zia?”",
+      "id": "REQ-10",
+      "text": "Switch the UI typography to a classic (non-cursive) font across the app by removing usage of the `font-cursive` styling on headings (proposal screen and celebration screen) and the letter modal title, and ensure all visible text renders in a standard non-cursive font style.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "recent-messages"
         ],
         "quotes": [
-          "change this meme into two couple cute cats “MWAAHHH MWAAHHH meme and her “zia” on will you be my valentine line like will be valentine zia"
+          "write on classic font not in cursive"
         ]
       },
       "acceptanceCriteria": [
-        "When the app is in the question state, the large header text is exactly “Will you be my Valentine zia?” (including the question mark)."
+        "On the proposal screen, the main header \"Will you be my Valentine zia?\" does not render in a cursive/script font.",
+        "On the celebration screen, the headline \"YAYYAYYY I KNEW YOU'D SAY YES ILOVEYOUSMM\" does not render in a cursive/script font.",
+        "In the letter modal, the title \"A Letter For You\" does not render in a cursive/script font.",
+        "No other UI elements use the `.font-cursive` utility to render cursive text."
       ]
     },
     {
-      "id": "REQ-8",
-      "text": "Replace the celebration meme image with a new generated image depicting two cute couple cats and including the meme text “MWAAHHH MWAAHHH”, and update the celebration screen to render this new image asset from `frontend/public/assets/generated`.",
+      "id": "REQ-11",
+      "text": "Remove the proposal-screen line of text \"I have something special to ask you... 💕\" so it is no longer displayed anywhere in the question state UI.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "recent-messages"
         ],
         "quotes": [
-          "change this meme into two couple cute cats “MWAAHHH MWAAHHH meme"
+          "remove i have something special to ask you"
         ]
       },
       "acceptanceCriteria": [
-        "After clicking “Yes”, the celebration view displays the new couple-cats meme image (not the previous meme).",
-        "The celebration meme image is loaded from `/assets/generated/` and is not fetched from the backend.",
-        "The image displayed in the celebration view matches the newly generated file name specified in imageRequirements.edits."
+        "The proposal screen no longer shows the text \"I have something special to ask you...\" (including the heart emoji).",
+        "The rest of the proposal screen layout (question header and Yes/No buttons) remains functional and visually centered."
       ]
     },
     {
-      "id": "REQ-9",
-      "text": "Update the visible meme-text line on the celebration screen to use the user’s spelling with three H’s, so it reads exactly: “MWAAHHH MWAAHHH 💋💋”.",
+      "id": "REQ-12",
+      "text": "Remove all meme content from the celebration screen, including the couple-cats meme image and any visible \"MWAAHH/MWAAHHH\" meme text, so the celebration state contains no meme image and no \"MWAAHH\" line.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "recent-messages"
         ],
         "quotes": [
-          "“MWAAHHH MWAAHHH meme"
+          "remove previous and new meme two cats kissing each  MWAAAHH MWAAAHH meme"
         ]
       },
       "acceptanceCriteria": [
-        "After clicking “Yes”, the large pulsing text under the meme image reads exactly “MWAAHHH MWAAHHH 💋💋”."
+        "In the celebration state, there is no image element rendering the meme asset (e.g., `/assets/generated/valentine-meme-cats.dim_1200x1200.png`).",
+        "In the celebration state, the text line \"MWAAHHH MWAAHHH 💋💋\" is not displayed (and no other \"MWAAHH\" meme text is shown).",
+        "The celebration state still shows the celebratory headline \"YAYYAYYY I KNEW YOU'D SAY YES ILOVEYOUSMM\" and still provides an \"Open Letter\" button that opens the existing letter modal."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under `frontend/src/hooks/useInternetIdentity.ts`, `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`, or anything in `frontend/src/components/ui`.",
-    "Keep the backend as-is (single Motoko actor, no new backend endpoints required) and continue serving images as static frontend assets."
+    "Frontend only; do not add or require backend changes (backend/main.mo should remain unused for this request).",
+    "Do not edit files under `frontend/src/components/ui` or any other paths listed as immutable in SYSTEM_CONTEXT.",
+    "Keep user-facing text in English."
   ],
   "nonGoals": [
-    "Do not change the evasive behavior of the “No” button.",
-    "Do not change the celebratory headline text “YAYYAYYY I KNEW YOU'D SAY YES ILOVEYOUSMM”.",
-    "Do not change the love letter content or the letter modal behavior."
+    "Do not add new meme images or replacement celebration images.",
+    "Do not change the Valentine question text \"Will you be my Valentine zia?\".",
+    "Do not remove the evasive behavior of the \"No\" button.",
+    "Do not change the love letter content text in `frontend/src/content/valentineLetter.ts`."
   ],
   "imageRequirements": {
     "required": [],
-    "edits": [
-      "Create a new meme image featuring two cute couple cats with bold cute meme typography that includes the text “MWAAHHH MWAAHHH” (valentine-meme.dim_1200x1200.png > valentine-meme-cats.dim_1200x1200.png)"
-    ]
-  },
-  "userProfileUpdate": {
-    "goalsToAdd": [],
-    "goalsToRemove": [],
-    "preferencesToAdd": [],
-    "preferencesToRemove": [],
-    "miscToAdd": [],
-    "miscToRemove": [],
-    "fieldsToSet": {},
-    "fieldsToDelete": []
+    "edits": []
   }
 }

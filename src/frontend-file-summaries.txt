@@ -1,9 +1,9 @@
 {
-  "frontend/src/App.tsx": "Main Valentine's Day proposal page with personalized question \"Will you be my Valentine zia?\", evasive \"No\" button, celebration view with couple-cats meme, and letter reveal functionality.",
-  "frontend/src/components/LetterModal.tsx": "Modal dialog component that displays the full romantic letter in a scrollable, beautifully styled container.",
+  "frontend/src/App.tsx": "Main Valentine's Day proposal page with personalized question \"Will you be my Valentine zia?\", evasive \"No\" button, celebration view with headline and letter reveal functionality, now using classic (non-cursive) fonts throughout.",
+  "frontend/src/components/LetterModal.tsx": "Modal dialog component that displays the full romantic letter in a scrollable, beautifully styled container with classic font styling.",
   "frontend/src/hooks/useEvasiveButton.ts": "Custom hook that manages the evasive \"No\" button positioning logic, calculating random safe positions within container bounds.",
   "frontend/src/content/valentineLetter.ts": "Contains the complete romantic letter text exactly as provided by the user.",
-  "frontend/src/index.css": "Global styles with romantic pink/white OKLCH color system, background image integration with gradient overlay, floating heart animations, and cursive font utilities without using @apply directives.",
+  "frontend/src/index.css": "Global styles with romantic pink/white OKLCH color system, background image integration with gradient overlay, and floating heart animations using classic fonts only.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color palette tokens (light, medium, dark, darker pink shades) for consistent theming.",
   "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this client-side Valentine's page."
 }

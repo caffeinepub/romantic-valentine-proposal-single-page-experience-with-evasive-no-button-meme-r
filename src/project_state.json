@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
-  "summary": "Interactive romantic Valentine proposal web page (single-page HTML/CSS/JS) for iPad Chrome: Yes/No prompt with evasive No button; Yes reveals a cute couple-cats meme and an \"Open letter\" option that displays a provided love letter; prompt line includes \"zia\" wording; pink/white theme.",
+  "projectStateVersion": 7,
+  "summary": "Interactive romantic Valentine proposal web page (single-page HTML/CSS/JS) for iPad Chrome: Yes/No prompt with evasive No button; Yes transitions to a celebration state (no meme image / no \"MWAAAHH\" text); an \"Open letter\" option displays a provided love letter; remove the \"I have something special to ask you\" line; prompt line includes \"zia\" wording; use a classic (non-cursive) font; pink/white theme.",
   "architectural_notes": [
-    "Implement as a standalone interactive HTML/CSS/JS page intended to run locally in iPad Chrome."
+    "Implement as a standalone interactive HTML/CSS/JS page intended to run locally in iPad Chrome.",
+    "Use a classic, non-cursive font for UI typography."
   ],
   "known_issues": [],
-  "isFixRequest": false,
-  "imageRequirements": "## Edit Images\n- Create a new meme image featuring two cute couple cats with bold cute meme typography that includes the text “MWAAHHH MWAAHHH” (valentine-meme.dim_1200x1200.png > valentine-meme-cats.dim_1200x1200.png)",
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-create-a-single-page-romantic-valentine-proposal-ui-that-asks-will-you-be-my-valentine-and-presents-two-prominent-options-yes-and-no-optimized-for-ipad-chrome-responsive-layout-large-tap-targets-centered-card-layout",
@@ -80,18 +80,36 @@
         "REQ-9"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-switch-the-ui-typography-to-a-classic-non-cursive-font-across-the-app-by-removing-usage-of-the-font-cursive-styling-on-headings-proposal-screen-and-celebration-screen-and-the-letter-modal-title-and-ensure-all-visible-text-renders-in-a-standard-non-cursive-font-style",
+      "title": "Switch the UI typography to a classic (non-cursive) font across the app by removing usage of the `font-cursive` styling on headings (proposal screen and celebration screen) and the letter modal title, and ensure all visible text renders in a standard non-cursive font style.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-proposal-screen-line-of-text-i-have-something-special-to-ask-you-so-it-is-no-longer-displayed-anywhere-in-the-question-state-ui",
+      "title": "Remove the proposal-screen line of text \"I have something special to ask you... 💕\" so it is no longer displayed anywhere in the question state UI.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-meme-content-from-the-celebration-screen-including-the-couple-cats-meme-image-and-any-visible-mwaahh-mwaahhh-meme-text-so-the-celebration-state-contains-no-meme-image-and-no-mwaahh-line",
+      "title": "Remove all meme content from the celebration screen, including the couple-cats meme image and any visible \"MWAAHH/MWAAHHH\" meme text, so the celebration state contains no meme image and no \"MWAAHH\" line.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
     {
       "id": "AR-1",
       "summary": "Build single-page romantic Valentine prompt with Yes/No buttons; No button moves away on hover to prevent clicking",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-2",
-      "summary": "On Yes click, display meme image/message: \"YAYYAYYY I KNEW YOU’D SAY YES ILOVEYOUSMM\" and include another meme text \"MWAAHH MWAAAHH\"",
       "reqIds": [],
       "status": "pending"
     },
@@ -108,8 +126,20 @@
       "status": "pending"
     },
     {
-      "id": "AR-5",
-      "summary": "Replace the current celebration meme with a cute couple-cats \"MWAAHHH MWAAHHH\" meme image and update the prompt line to include \"zia\" (e.g., \"Will you be my Valentine zia\")",
+      "id": "AR-6",
+      "summary": "Switch typography to a classic (non-cursive) font across the page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Remove any meme image/content from the Yes/celebration screen, including the couple-cats kissing \"MWAAAHH\" meme and visible \"MWAAAHH\" text",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Remove the proposal-screen line/text: \"I have something special to ask you\"",
       "reqIds": [],
       "status": "pending"
     }
