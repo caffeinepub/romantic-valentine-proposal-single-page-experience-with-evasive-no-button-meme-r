@@ -1,2 +1,3 @@
-# romantic-valentine-proposal-single-page-experience-with-evasive-no-button-meme-r
-Exported from Caffeine project: Romantic Valentine proposal single-page experience with evasive No button, meme reveal, and openable love letter
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

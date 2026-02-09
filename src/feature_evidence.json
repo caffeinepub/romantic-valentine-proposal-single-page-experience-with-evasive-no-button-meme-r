@@ -1,0 +1,59 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-main-question-header-text-on-the-proposal-screen-to-include-zia-in-the-same-line-so-it-reads-exactly-will-you-be-my-valentine-zia",
+      "featureTitle": "Update the main question header text on the proposal screen to include “zia” in the same line, so it reads exactly: “Will you be my Valentine zia?”",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-replace-the-celebration-meme-image-with-a-new-generated-image-depicting-two-cute-couple-cats-and-including-the-meme-text-mwaahhh-mwaahhh-and-update-the-celebration-screen-to-render-this-new-image-asset-from-frontend-public-assets-generated",
+      "featureTitle": "Replace the celebration meme image with a new generated image depicting two cute couple cats and including the meme text “MWAAHHH MWAAHHH”, and update the celebration screen to render this new image asset from `frontend/public/assets/generated`.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-visible-meme-text-line-on-the-celebration-screen-to-use-the-user-s-spelling-with-three-h-s-so-it-reads-exactly-mwaahhh-mwaahhh",
+      "featureTitle": "Update the visible meme-text line on the celebration screen to use the user’s spelling with three H’s, so it reads exactly: “MWAAHHH MWAAHHH 💋💋”.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "build_request",
+  "title": "Update Valentine prompt text to include “zia” and replace celebration meme with cute couple cats",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Update the main question header text on the proposal screen to include “zia” in the same line, so it reads exactly: “Will you be my Valentine zia?”",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "change this meme into two couple cute cats “MWAAHHH MWAAHHH meme and her “zia” on will you be my valentine line like will be valentine zia"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When the app is in the question state, the large header text is exactly “Will you be my Valentine zia?” (including the question mark)."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Replace the celebration meme image with a new generated image depicting two cute couple cats and including the meme text “MWAAHHH MWAAHHH”, and update the celebration screen to render this new image asset from `frontend/public/assets/generated`.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "change this meme into two couple cute cats “MWAAHHH MWAAHHH meme"
+        ]
+      },
+      "acceptanceCriteria": [
+        "After clicking “Yes”, the celebration view displays the new couple-cats meme image (not the previous meme).",
+        "The celebration meme image is loaded from `/assets/generated/` and is not fetched from the backend.",
+        "The image displayed in the celebration view matches the newly generated file name specified in imageRequirements.edits."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Update the visible meme-text line on the celebration screen to use the user’s spelling with three H’s, so it reads exactly: “MWAAHHH MWAAHHH 💋💋”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "“MWAAHHH MWAAHHH meme"
+        ]
+      },
+      "acceptanceCriteria": [
+        "After clicking “Yes”, the large pulsing text under the meme image reads exactly “MWAAHHH MWAAHHH 💋💋”."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under `frontend/src/hooks/useInternetIdentity.ts`, `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`, or anything in `frontend/src/components/ui`.",
+    "Keep the backend as-is (single Motoko actor, no new backend endpoints required) and continue serving images as static frontend assets."
+  ],
+  "nonGoals": [
+    "Do not change the evasive behavior of the “No” button.",
+    "Do not change the celebratory headline text “YAYYAYYY I KNEW YOU'D SAY YES ILOVEYOUSMM”.",
+    "Do not change the love letter content or the letter modal behavior."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Create a new meme image featuring two cute couple cats with bold cute meme typography that includes the text “MWAAHHH MWAAHHH” (valentine-meme.dim_1200x1200.png > valentine-meme-cats.dim_1200x1200.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

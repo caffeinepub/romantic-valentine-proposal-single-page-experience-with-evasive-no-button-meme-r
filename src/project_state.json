@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Interactive romantic Valentine proposal web page (single-page HTML/CSS/JS) for iPad Chrome: Yes/No prompt with evasive No button; Yes reveals a cute couple-cats meme and an \"Open letter\" option that displays a provided love letter; prompt line includes \"zia\" wording; pink/white theme.",
+  "architectural_notes": [
+    "Implement as a standalone interactive HTML/CSS/JS page intended to run locally in iPad Chrome."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Create a new meme image featuring two cute couple cats with bold cute meme typography that includes the text “MWAAHHH MWAAHHH” (valentine-meme.dim_1200x1200.png > valentine-meme-cats.dim_1200x1200.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-romantic-valentine-proposal-ui-that-asks-will-you-be-my-valentine-and-presents-two-prominent-options-yes-and-no-optimized-for-ipad-chrome-responsive-layout-large-tap-targets-centered-card-layout",
+      "title": "Create a single-page romantic Valentine proposal UI that asks: \"Will you be my Valentine?\" and presents two prominent options: \"Yes\" and \"No\", optimized for iPad Chrome (responsive layout, large tap targets, centered card layout).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-evasive-behavior-for-the-no-option-when-the-user-attempts-to-interact-with-it-pointer-hover-on-desktop-pointer-touch-start-on-ipad-the-no-button-moves-to-a-new-random-position-within-the-visible-container-so-it-cannot-be-clicked",
+      "title": "Implement evasive behavior for the \"No\" option: when the user attempts to interact with it (pointer hover on desktop, pointer/touch start on iPad), the \"No\" button moves to a new random position within the visible container so it cannot be clicked.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-yes-click-transition-the-ui-to-a-celebration-state-that-displays-a-meme-image-and-the-exact-celebratory-text-yayyayyy-i-knew-you-d-say-yes-iloveyousmm-and-also-includes-the-meme-text-mwaahh-mwaaahh-as-visible-on-the-page",
+      "title": "On \"Yes\" click, transition the UI to a celebration state that displays a meme image and the exact celebratory text: \"YAYYAYYY I KNEW YOU’D SAY YES ILOVEYOUSMM\" and also includes the meme text \"MWAAHH MWAAAHH\" as visible on the page.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-after-yes-is-selected-show-an-open-letter-option-button-when-the-user-clicks-it-reveal-the-full-provided-letter-text-exactly-as-supplied-in-a-readable-scrollable-container-or-modal-with-clear-typography",
+      "title": "After \"Yes\" is selected, show an \"Open letter\" option/button; when the user clicks it, reveal the full provided letter text exactly as supplied, in a readable scrollable container (or modal) with clear typography.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-romantic-theme-using-a-pink-and-white-color-scheme-across-the-page-background-card-buttons-typography-with-a-cohesive-valentine-card-visual-style-and-subtle-decorative-elements-e-g-hearts-paper-texture-without-adding-extra-app-features",
+      "title": "Apply a consistent romantic theme using a pink and white color scheme across the page (background, card, buttons, typography), with a cohesive Valentine-card visual style and subtle decorative elements (e.g., hearts/paper texture) without adding extra app features.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-required-generated-images-to-the-frontend-as-static-assets-under-frontend-public-assets-generated-and-render-them-directly-from-the-frontend-do-not-fetch-through-the-backend",
+      "title": "Add the required generated images to the frontend as static assets under `frontend/public/assets/generated` and render them directly from the frontend (do not fetch through the backend).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-main-question-header-text-on-the-proposal-screen-to-include-zia-in-the-same-line-so-it-reads-exactly-will-you-be-my-valentine-zia",
+      "title": "Update the main question header text on the proposal screen to include “zia” in the same line, so it reads exactly: “Will you be my Valentine zia?”",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-celebration-meme-image-with-a-new-generated-image-depicting-two-cute-couple-cats-and-including-the-meme-text-mwaahhh-mwaahhh-and-update-the-celebration-screen-to-render-this-new-image-asset-from-frontend-public-assets-generated",
+      "title": "Replace the celebration meme image with a new generated image depicting two cute couple cats and including the meme text “MWAAHHH MWAAHHH”, and update the celebration screen to render this new image asset from `frontend/public/assets/generated`.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-visible-meme-text-line-on-the-celebration-screen-to-use-the-user-s-spelling-with-three-h-s-so-it-reads-exactly-mwaahhh-mwaahhh",
+      "title": "Update the visible meme-text line on the celebration screen to use the user’s spelling with three H’s, so it reads exactly: “MWAAHHH MWAAHHH 💋💋”.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build single-page romantic Valentine prompt with Yes/No buttons; No button moves away on hover to prevent clicking",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "On Yes click, display meme image/message: \"YAYYAYYY I KNEW YOU’D SAY YES ILOVEYOUSMM\" and include another meme text \"MWAAHH MWAAAHH\"",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "After Yes, show \"Open letter\" option; when clicked, reveal the full provided letter text",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Apply romantic pink/white styling and simple layout optimized for running in Chrome on iPad",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Replace the current celebration meme with a cute couple-cats \"MWAAHHH MWAAHHH\" meme image and update the prompt line to include \"zia\" (e.g., \"Will you be my Valentine zia\")",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Romantic Valentine proposal single-page experience with evasive No button, meme reveal, and openable love letter",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,18 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no backend logic.",
+  "feature_evidence.json": "Declares three frontend feature reports affecting App.tsx, including updated question text and celebration meme changes.",
+  "frontend-file-summaries.txt": "Lists short descriptions of all frontend files including App, modal, hooks, styles, and config.",
+  "frontend/index.css": "Tailwind base/style variables defining OKLCH color tokens and theming for light and dark modes.",
+  "frontend/index.html": "HTML entry mounting root element and loading the main React script.",
+  "frontend/src/App.tsx": "Main UI with Valentine question, evasive No button, celebration screen, hearts animation, and letter modal trigger.",
+  "frontend/src/components/LetterModal.tsx": "Dialog component that displays a scrollable romantic letter with decorative styling.",
+  "frontend/src/content/valentineLetter.ts": "Exports the full romantic letter text used in the modal.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages backend actor instances tied to Internet Identity.",
+  "frontend/src/hooks/useEvasiveButton.ts": "Generates random safe positions for an evasive No button within a container.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity auth context with login, logout, and identity lifecycle logic.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder indicating no backend queries are required.",
+  "frontend/src/index.css": "Defines Tailwind layers, color variables for light/dark themes, global styles, background imagery, and custom utilities including float animations.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and an Internet Identity provider, then renders App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with dark mode, content paths, extended theme colors tied to CSS variables, animations, and plugins.",
+  "project_state.json": "Stores project metadata, requirements, feature definitions, and image instructions for the Valentine proposal web page."
+}
